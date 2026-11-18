@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="KOGOS">
+  <rect width="64" height="64" rx="12" fill="#0b1b2b"/>
+  <g transform="translate(10.5 10)">
+    <path d="M21.5 1.2 41.5 12 21.5 22.8 1.5 12Z" fill="#8fb3da"/>
+    <path d="M1.5 14.6 19.6 24.9v21.9L1.5 36.4Z" fill="#2f5d8f"/>
+    <path d="M41.5 14.6 23.4 24.9v21.9l18.1-10.4Z" fill="#4f80bc"/>
+  </g>
+</svg>

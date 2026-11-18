@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="ko" data-lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>KOGOS 코고스 | 임베디드 H/W 설계 ODM · 산업용 LCD/CTP · 2026 ODM 제품</title>
+<meta name="description" content="코고스(KOGOS)는 임베디드 하드웨어 설계 ODM과 산업용 LCD·CTP 통합을 전문으로 합니다. i.MX6, Raspberry Pi CM3/CM4, STM32F407 기반 2026 ODM 제품 5종과 설계·인증·양산 원스톱 서비스를 제공합니다." />
+<meta name="keywords" content="KOGOS, 코고스, 임베디드 ODM, 산업용 보드, i.MX6, Raspberry Pi CM4, CM3, STM32F407, 산업용 LCD, CTP, HMI, Panel PC, RTU, EV charger" />
+<meta name="theme-color" content="#0b1b2b" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="KOGOS 코고스 | 임베디드 H/W 설계 ODM" />
+<meta property="og:description" content="설계부터 인증·양산까지, 임베디드 하드웨어 ODM 원스톱. 2026 ODM 제품 라인업 5종." />
+<meta property="og:image" content="assets/images/products/product-imx6q.jpg" />
+<meta property="og:locale" content="ko_KR" />
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<a class="skip-link" href="#main"><span class="ko">본문으로 이동</span><span class="en">Skip to content</span></a>
+
+<header class="site-header" id="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="#top" aria-label="KOGOS">
+      <svg class="brand-mark" viewBox="0 0 40 44" aria-hidden="true" focusable="false">
+        <path d="M20 1.6 37 11 20 20.4 3 11Z" fill="#8fb3da"/>
+        <path d="M3 13.2 18.9 22.3v19.4L3 32.6Z" fill="#2f5d8f"/>
+        <path d="M37 13.2 21.1 22.3v19.4L37 32.6Z" fill="#4f80bc"/>
+      </svg>
+      <span class="brand-text">
+        <span class="brand-name">KOGOS</span>
+        <span class="brand-sub">Embedded ODM</span>
+      </span>
+    </a>
+
+    <nav class="nav" id="nav" aria-label="주 메뉴">
+      <a href="#about"><span class="ko">회사 소개</span><span class="en">Company</span></a>
+      <a href="#capabilities"><span class="ko">ODM 역량</span><span class="en">Capabilities</span></a>
+      <a href="#products"><span class="ko">제품 라인업</span><span class="en">Products</span></a>
+      <a href="#applications"><span class="ko">적용 분야</span><span class="en">Applications</span></a>
+      <a href="#contact"><span class="ko">문의</span><span class="en">Contact</span></a>
+    </nav>
+
+    <div class="header-actions">
+      <div class="lang-switch" role="group" aria-label="Language / 언어">
+        <button type="button" class="lang-btn is-active" data-lang="ko" aria-pressed="true">KO</button>
+        <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+      <a class="btn btn-primary btn-sm header-cta" href="#contact">
+        <span class="ko">상담 요청</span><span class="en">Get a quote</span>
+      </a>
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="nav" aria-label="메뉴">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="top">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow">
+          <span class="dot" aria-hidden="true"></span>
+          <span class="ko">임베디드 H/W 설계 ODM · 산업용 LCD/CTP</span>
+          <span class="en">Embedded H/W Design ODM · Industrial LCD &amp; CTP</span>
+        </p>
+        <h1>
+          <span class="ko">임베디드 하드웨어,<br /><em>설계부터 양산까지</em><br />한 곳에서 완성합니다</span>
+          <span class="en">Embedded hardware,<br /><em>from design to production</em><br />in one place</span>
+        </h1>
+        <p class="hero-lead">
+          <span class="ko">코고스는 NXP i.MX6, Raspberry Pi CM3/CM4, STM32F407 기반 산업용 보드와 7.0″~15.4″ LCD·정전식 터치(CTP) 통합을 전문으로 하는 임베디드 H/W 설계 ODM 기업입니다. RFP 정리부터 회로·PCB 설계, 펌웨어, 인증, 양산까지 단일 창구로 진행합니다.</span>
+          <span class="en">KOGOS is an embedded hardware design ODM specialising in industrial boards built on NXP i.MX6, Raspberry Pi CM3/CM4 and STM32F407, together with 7.0″–15.4″ LCD and capacitive touch integration. One team carries your project from RFP and circuit/PCB design through firmware, certification and volume production.</span>
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#products">
+            <span class="ko">2026 제품 라인업</span><span class="en">2026 product lineup</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true" class="btn-arrow"><path d="M5 12h13M12 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a class="btn btn-ghost" href="#contact">
+            <span class="ko">ODM 상담하기</span><span class="en">Talk to us</span>
+          </a>
+        </div>
+        <dl class="hero-stats">
+          <div>
+            <dt><span class="ko">표준 플랫폼</span><span class="en">Platforms</span></dt>
+            <dd>5</dd>
+            <p><span class="ko">i.MX6 · CM4 · CM3 · STM32F407</span><span class="en">i.MX6 · CM4 · CM3 · STM32F407</span></p>
+          </div>
+          <div>
+            <dt><span class="ko">디스플레이 대응</span><span class="en">Display support</span></dt>
+            <dd>7.0″–15.4″</dd>
+            <p><span class="ko">LVDS · MIPI · CTP 통합</span><span class="en">LVDS · MIPI · CTP integration</span></p>
+          </div>
+          <div>
+            <dt><span class="ko">핵심 인력 경력</span><span class="en">Core team</span></dt>
+            <dd>15+<span class="unit">yrs</span></dd>
+            <p><span class="ko">H/W · PCB · S/W 개발</span><span class="en">H/W · PCB · S/W development</span></p>
+          </div>
+        </dl>
+      </div>
+
+      <div class="hero-visual">
+        <figure class="hero-card">
+          <div class="hero-card-media">
+            <img src="assets/images/products/product-imx6q-md.jpg" alt="KOGOS IMX6Q 보드" width="800" height="800" />
+          </div>
+          <figcaption>
+            <span class="tag">IMX6Q Board</span>
+            <span class="hero-card-note"><span class="ko">2026 ODM Lineup</span><span class="en">2026 ODM Lineup</span></span>
+          </figcaption>
+        </figure>
+        <div class="hero-chip hero-chip-1">
+          <strong>Linux</strong><span>4.1.15</span>
+        </div>
+        <div class="hero-chip hero-chip-2">
+          <strong>3 ×</strong><span><span class="ko">Ethernet</span><span class="en">Ethernet</span></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section class="section section-about" id="about">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="section-label"><span class="ko">회사 소개</span><span class="en">About KOGOS</span></p>
+        <h2>
+          <span class="ko">아이디어를 <em>양산되는 제품</em>으로 만드는 엔지니어링 팀</span>
+          <span class="en">The engineering team that turns ideas into <em>shippable products</em></span>
+        </h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-copy reveal">
+          <p>
+            <span class="ko">코고스(KOGOS)는 산업용 임베디드 보드와 HMI를 설계·공급하는 ODM 전문 기업입니다. 고객의 요구사항을 RFP 단계에서 구체화하고, 회로 설계 · PCB 아트워크 · 펌웨어 · 애플리케이션 · 인증 · 양산을 하나의 팀이 책임집니다.</span>
+            <span class="en">KOGOS designs and supplies industrial embedded boards and HMI systems as an ODM partner. We sharpen a customer's requirement at the RFP stage, then own circuit design, PCB artwork, firmware, application software, certification and production with a single team.</span>
+          </p>
+          <p>
+            <span class="ko">자체 설계한 i.MX6, Raspberry Pi CM3/CM4, STM32F407 플랫폼에 산업용 LCD와 정전식 터치를 통합한 패널 PC · HMI · RTU · 충전기 제어보드를 공급하며, 2026년 기준 ODM 라인업 5종을 표준 제품으로 제공합니다.</span>
+            <span class="en">On our own i.MX6, Raspberry Pi CM3/CM4 and STM32F407 platforms we integrate industrial LCDs and capacitive touch to ship panel PCs, HMIs, RTUs and charger control boards. Five of these are offered as standard products in the 2026 ODM lineup.</span>
+          </p>
+          <p>
+            <span class="ko">소량 시제품부터 양산까지, 부품 수급과 장기 공급 안정성을 함께 고려해 설계합니다.</span>
+            <span class="en">From a handful of prototypes to volume, we design with component supply and long-term availability in mind.</span>
+          </p>
+          <div class="about-tags">
+            <span>SOM</span><span>Panel PC</span><span>HMI</span><span>RTU</span><span>Gateway</span><span>EV Charger</span>
+          </div>
+        </div>
+
+        <aside class="fact-card reveal">
+          <h3><span class="ko">한눈에 보기</span><span class="en">At a glance</span></h3>
+          <dl>
+            <div>
+              <dt><span class="ko">사업 분야</span><span class="en">Business</span></dt>
+              <dd><span class="ko">임베디드 H/W 설계 ODM · 산업용 LCD/CTP · 인증·양산</span><span class="en">Embedded H/W design ODM · Industrial LCD/CTP · Certification &amp; manufacturing</span></dd>
+            </div>
+            <div>
+              <dt><span class="ko">핵심 플랫폼</span><span class="en">Platforms</span></dt>
+              <dd>NXP i.MX6 · Raspberry Pi CM3 / CM4 · STM32F407</dd>
+            </div>
+            <div>
+              <dt><span class="ko">개발 범위</span><span class="en">Scope</span></dt>
+              <dd><span class="ko">회로 설계 · PCB 아트워크 · Linux/QT · 펌웨어 · 앱</span><span class="en">Circuit design · PCB artwork · Linux/QT · Firmware · Apps</span></dd>
+            </div>
+            <div>
+              <dt><span class="ko">인증 대응</span><span class="en">Certification</span></dt>
+              <dd>KC · CE · FCC · UL</dd>
+            </div>
+            <div>
+              <dt>R&amp;D Center</dt>
+              <dd><span class="ko">경기도 고양시 덕양구 으뜸로 130, 위프라임트윈타워 A동 1112호 (10544)</span><span class="en">Room 1112, Bldg A, WePrime Twin Tower, 130 Eutteum-ro, Deogyang-gu, Goyang-si, Gyeonggi-do 10544, Korea</span></dd>
+            </div>
+          </dl>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CAPABILITIES ===================== -->
+  <section class="section section-alt" id="capabilities">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="section-label"><span class="ko">ODM 역량</span><span class="en">Capabilities</span></p>
+        <h2>
+          <span class="ko">하드웨어부터 <em>양산까지</em>,<br />한 팀이 담당합니다</span>
+          <span class="en">From hardware to production,<br />held by <em>one team</em></span>
+        </h2>
+        <p class="section-sub">
+          <span class="ko">설계와 양산 사이에서 발생하는 커뮤니케이션 비용을 줄이는 것이 ODM의 핵심입니다. 코고스는 기구·전장·펌웨어·인증 담당이 같은 프로젝트에 참여합니다.</span>
+          <span class="en">The point of an ODM is to remove the hand-over cost between design and production. Mechanical, electrical, firmware and certification engineers sit on the same project.</span>
+        </p>
+      </div>
+
+      <div class="cards-3">
+        <article class="cap-card reveal">
+          <span class="cap-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M4 5h16v11H4z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M9 20h6M12 16v4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M7 9h3M7 12h2M14 9h3M14 12h3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+          </span>
+          <h3><span class="ko">H/W Design ODM</span><span class="en">H/W Design ODM</span></h3>
+          <p>
+            <span class="ko">회로 설계, PCB 아트워크, 부품 선정, 시제품 제작까지. SoM·베이스보드 설계와 RS-485/CAN/ADC/DAC/GPIO 인터페이스 확장을 수행합니다.</span>
+            <span class="en">Circuit design, PCB artwork, component selection and prototyping, including SoM and base-board design with RS-485, CAN, ADC/DAC and GPIO expansion.</span>
+          </p>
+          <ul>
+            <li><span class="ko">회로 · PCB 아트워크 (멀티레이어)</span><span class="en">Circuit &amp; multilayer PCB artwork</span></li>
+            <li><span class="ko">산업용 인터페이스 설계 (RS-485 · CAN · 절연)</span><span class="en">Industrial interfaces (RS-485, CAN, isolation)</span></li>
+            <li><span class="ko">전원 · EMI · ESD 검토</span><span class="en">Power, EMI and ESD review</span></li>
+          </ul>
+        </article>
+
+        <article class="cap-card reveal">
+          <span class="cap-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><rect x="2.5" y="5" width="19" height="12" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 20h8M12 17v3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M6.5 8.5h11v5h-11z" fill="currentColor" opacity=".18"/></svg>
+          </span>
+          <h3><span class="ko">산업용 LCD · CTP 통합</span><span class="en">Industrial LCD &amp; CTP</span></h3>
+          <p>
+            <span class="ko">7.0″~15.4″ LVDS/MIPI LCD와 I2C·USB 방식 정전식 터치를 보드에 맞춰 통합합니다. 백라이트·광학·기구 조건과 전면 IP65 설계까지 검토합니다.</span>
+            <span class="en">7.0″–15.4″ LVDS/MIPI panels with I2C or USB capacitive touch, matched to your board, including backlight, optics, mechanics and IP65 front-panel design.</span>
+          </p>
+          <ul>
+            <li><span class="ko">7.0″ / 10.1″ / 15.4″ 표준 대응</span><span class="en">7.0″ / 10.1″ / 15.4″ standards</span></li>
+            <li><span class="ko">터치 글러브·산업 환경 대응 검토</span><span class="en">Glove and harsh-environment touch review</span></li>
+            <li><span class="ko">케이블·커넥터·기구 연동 설계</span><span class="en">Cable, connector and enclosure design</span></li>
+          </ul>
+        </article>
+
+        <article class="cap-card reveal">
+          <span class="cap-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M3 20V10l6-4 6 4v10" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M15 20V8l6 4v8" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M6.5 13h5M6.5 16h5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+          </span>
+          <h3><span class="ko">Turnkey Production</span><span class="en">Turnkey Production</span></h3>
+          <p>
+            <span class="ko">부품 소싱, SMT, 기능 검사, 포장·출하까지 일괄 진행합니다. 소량 시제품과 양산 물량을 같은 공정 기준으로 관리합니다.</span>
+            <span class="en">Component sourcing, SMT, functional test, packing and shipment. Prototype runs and volume builds follow the same process standard.</span>
+          </p>
+          <ul>
+            <li><span class="ko">부품 수급 · 대체품 검토</span><span class="en">Sourcing and alternate-part review</span></li>
+            <li><span class="ko">기능 검사 지그 · 검사 항목 정의</span><span class="en">Test jigs and test-item definition</span></li>
+            <li><span class="ko">KC · CE · FCC · UL 인증 진행</span><span class="en">KC, CE, FCC and UL certification</span></li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="wide-card reveal">
+        <div class="wide-card-copy">
+          <h3><span class="ko">S/W · 펌웨어까지 같은 팀에서</span><span class="en">Software and firmware from the same team</span></h3>
+          <p>
+            <span class="ko">Linux(QT) · Raspberry Pi OS · FreeRTOS · Android 기반 펌웨어와 PC/모바일 애플리케이션을 개발합니다. 현장 장비 연동과 원격 모니터링 구성도 함께 설계합니다.</span>
+            <span class="en">Firmware on Linux (QT), Raspberry Pi OS, FreeRTOS and Android, plus PC and mobile applications, including field-device integration and remote monitoring.</span>
+          </p>
+        </div>
+        <ul class="chip-list">
+          <li>Linux 4.1 / Buildroot</li>
+          <li>Raspberry Pi OS</li>
+          <li>QT GUI</li>
+          <li>FreeRTOS</li>
+          <li>Android</li>
+          <li>Modbus / RS-485</li>
+          <li>Node-RED</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROCESS ===================== -->
+  <section class="section section-process" id="process">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="section-label"><span class="ko">진행 절차</span><span class="en">How we work</span></p>
+        <h2><span class="ko">RFP에서 양산까지 <em>5단계</em></span><span class="en">Five steps from RFP to volume</span></h2>
+      </div>
+      <ol class="process">
+        <li class="reveal">
+          <span class="step-no">01</span>
+          <h3><span class="ko">요구사항 정의</span><span class="en">Requirement</span></h3>
+          <p><span class="ko">용도·환경·인터페이스·수량·인증 범위를 정리하고 RFP를 함께 작성합니다.</span><span class="en">We define use case, environment, interfaces, volumes and certification scope, and write the RFP together.</span></p>
+        </li>
+        <li class="reveal">
+          <span class="step-no">02</span>
+          <h3><span class="ko">플랫폼 매칭</span><span class="en">Platform match</span></h3>
+          <p><span class="ko">보유 플랫폼과 표준 제품 중 가장 가까운 구성으로 일정·원가를 제안합니다.</span><span class="en">We propose the closest fit among our platforms and standard products, with schedule and cost.</span></p>
+        </li>
+        <li class="reveal">
+          <span class="step-no">03</span>
+          <h3><span class="ko">설계 · 시제품</span><span class="en">Design</span></h3>
+          <p><span class="ko">회로·PCB·기구·펌웨어 설계 후 시제품을 제작해 기능을 검증합니다.</span><span class="en">Circuit, PCB, mechanical and firmware design, then prototype builds for functional validation.</span></p>
+        </li>
+        <li class="reveal">
+          <span class="step-no">04</span>
+          <h3><span class="ko">검증 · 인증</span><span class="en">Validation</span></h3>
+          <p><span class="ko">환경 시험과 EMC 사전 검토, KC·CE·FCC 등 인증을 진행합니다.</span><span class="en">Environmental testing, pre-scan EMC review and KC/CE/FCC certification.</span></p>
+        </li>
+        <li class="reveal">
+          <span class="step-no">05</span>
+          <h3><span class="ko">양산 · 공급</span><span class="en">Production</span></h3>
+          <p><span class="ko">양산과 출하 검사, 이후 장기 공급과 변경 관리를 담당합니다.</span><span class="en">Volume build, outgoing inspection, then long-term supply and change control.</span></p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ===================== PRODUCTS ===================== -->
+  <section class="section section-products" id="products">
+    <div class="container">
+      <div class="section-head section-head-row reveal">
+        <div>
+          <p class="section-label"><span class="ko">2026 ODM 제품 라인업</span><span class="en">2026 ODM lineup</span></p>
+          <h2><span class="ko">바로 적용 가능한 <em>5개의 플랫폼</em></span><span class="en">Five platforms, ready to deploy</span></h2>
+          <p class="section-sub">
+            <span class="ko">표준 사양으로 공급하며, 인터페이스·디스플레이·케이스는 프로젝트에 맞춰 조정할 수 있습니다. 카드를 눌러 전체 사양을 확인하세요.</span>
+            <span class="en">Supplied as standard, customisable on interface, display and enclosure. Open a card for the full specification.</span>
+          </p>
+        </div>
+        <a class="btn btn-ghost btn-sm catalog-link" href="assets/docs/KOGOS-ODM-Product-List-2026.pdf" download>
+          <svg viewBox="0 0 24 24" aria-hidden="true" class="btn-ico"><path d="M12 4v11m0 0 4-4m-4 4-4-4M5 19h14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span class="ko">2026 ODM 카탈로그 (PDF)</span><span class="en">2026 ODM catalogue (PDF)</span>
+        </a>
+      </div>
+
+      <div class="product-grid">
+        <!-- IMX6Q -->
+        <article class="product-card product-card-wide reveal" data-product="imx6q">
+          <div class="product-media">
+            <img src="assets/images/products/product-imx6q-md.jpg" alt="KOGOS IMX6Q Board — NXP i.MX6 Quad 산업용 메인보드" width="800" height="800" loading="lazy" />
+          </div>
+          <div class="product-body">
+            <p class="product-tag">NXP i.MX6 Quad</p>
+            <h3>IMX6Q Board</h3>
+            <p class="product-desc">
+              <span class="ko">3개의 이더넷과 최대 15.4″ LVDS 디스플레이를 지원하는 산업용 메인보드. RS-232/RS-485 선택형 UART와 CAN, mSATA·Mini PCIe 확장을 제공합니다.</span>
+              <span class="en">Industrial main board with three Ethernet ports and up to a 15.4″ LVDS display, selectable RS-232/RS-485 UARTs, CAN, plus mSATA and Mini PCIe expansion.</span>
+            </p>
+            <ul class="spec-chips">
+              <li>3 × Ethernet</li>
+              <li>7.0″–15.4″ LVDS</li>
+              <li>8 × RS-232 / 2 × CAN</li>
+              <li>Linux 4.1.15</li>
+            </ul>
+            <ul class="feature-list">
+              <li><span class="ko">4코어 Cortex-A9 · 2 GB RAM · 32 GB eMMC</span><span class="en">Quad Cortex-A9 · 2 GB RAM · 32 GB eMMC</span></li>
+              <li><span class="ko">Mini PCIe(4G) · mSATA SSD 확장</span><span class="en">Mini PCIe (4G) · mSATA SSD expansion</span></li>
+              <li><span class="ko">동작 온도 -20 ~ 70 ℃</span><span class="en">Operating -20 to 70 ℃</span></li>
+              <li><span class="ko">USB · SD · eMMC 부팅 선택</span><span class="en">Boot from USB, SD or eMMC</span></li>
+            </ul>
+            <div class="product-actions">
+              <button type="button" class="btn btn-outline btn-sm" data-open-spec="imx6q">
+                <span class="ko">전체 사양 보기</span><span class="en">Full specification</span>
+              </button>
+              <a class="link-arrow" href="#contact" data-quote="IMX6Q Board">
+                <span class="ko">견적 문의</span><span class="en">Request quote</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- CM4 -->
+        <article class="product-card reveal" data-product="cm4">
+          <div class="product-media">
+            <img src="assets/images/products/product-cm4-md.jpg" alt="KOGOS CM4 Board — Raspberry Pi CM4 기반 HMI 보드" width="800" height="800" loading="lazy" />
+          </div>
+          <div class="product-body">
+            <p class="product-tag">Raspberry Pi CM4</p>
+            <h3>CM4 Board</h3>
+            <p class="product-desc">
+              <span class="ko">CM4 기반 HMI·게이트웨이용 베이스보드. 4포트 RS-485/RS-232와 8ch ADC·4ch DAC, M.2 NVMe와 LTE 확장을 갖췄습니다.</span>
+              <span class="en">CM4 base board for HMI and gateway builds, with four RS-485/RS-232 ports, 8-channel ADC, 4-channel DAC, M.2 NVMe and LTE options.</span>
+            </p>
+            <ul class="spec-chips">
+              <li>2 × Ethernet</li>
+              <li>4 × RS-485/232</li>
+              <li>M.2 NVMe · LTE</li>
+              <li>24 V</li>
+            </ul>
+            <div class="product-actions">
+              <button type="button" class="btn btn-outline btn-sm" data-open-spec="cm4">
+                <span class="ko">전체 사양 보기</span><span class="en">Full specification</span>
+              </button>
+              <a class="link-arrow" href="#contact" data-quote="CM4 Board">
+                <span class="ko">견적 문의</span><span class="en">Request quote</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- CM3 -->
+        <article class="product-card reveal" data-product="cm3">
+          <div class="product-media">
+            <img src="assets/images/products/product-cm3-md.jpg" alt="KOGOS CM3 Board — Raspberry Pi CM3 기반 베이스보드" width="800" height="800" loading="lazy" />
+          </div>
+          <div class="product-body">
+            <p class="product-tag">Raspberry Pi CM3</p>
+            <h3>CM3 Board</h3>
+            <p class="product-desc">
+              <span class="ko">컴팩트한 CM3 베이스보드. 7.0″/10.1″ LVDS LCD와 CTP, 3개의 USB 호스트를 갖춘 24V 입력 구성입니다.</span>
+              <span class="en">A compact CM3 base board: 7.0″/10.1″ LVDS LCD with CTP, three USB host ports, 24 V input.</span>
+            </p>
+            <ul class="spec-chips">
+              <li>1 × Ethernet</li>
+              <li>3 × USB 2.0</li>
+              <li>1 × RS-485 / 2 × RS-232</li>
+              <li>24 V</li>
+            </ul>
+            <div class="product-actions">
+              <button type="button" class="btn btn-outline btn-sm" data-open-spec="cm3">
+                <span class="ko">전체 사양 보기</span><span class="en">Full specification</span>
+              </button>
+              <a class="link-arrow" href="#contact" data-quote="CM3 Board">
+                <span class="ko">견적 문의</span><span class="en">Request quote</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- SOLAR RTU -->
+        <article class="product-card reveal" data-product="solar">
+          <div class="product-media">
+            <img src="assets/images/products/product-solar-rtu-md.jpg" alt="KOGOS STM32F407 Solar RTU — 태양광 원격 단말 제어보드" width="800" height="800" loading="lazy" />
+          </div>
+          <div class="product-body">
+            <p class="product-tag">STM32F407</p>
+            <h3>Solar RTU</h3>
+            <p class="product-desc">
+              <span class="ko">태양광 원격 단말(RTU)용 제어보드. 4개의 RS-485와 2개의 RS-232, 5분 UPS 기능, 2.4″ LCD와 4키 조작부를 제공합니다.</span>
+              <span class="en">Control board for solar remote terminal units: four RS-485 and two RS-232 ports, 5-minute UPS, 2.4″ LCD and a four-key panel.</span>
+            </p>
+            <ul class="spec-chips">
+              <li>4 × RS-485</li>
+              <li>UPS 5 min</li>
+              <li>2.4″ LCD + 4-key</li>
+              <li>AC 220 V</li>
+            </ul>
+            <div class="product-actions">
+              <button type="button" class="btn btn-outline btn-sm" data-open-spec="solar">
+                <span class="ko">전체 사양 보기</span><span class="en">Full specification</span>
+              </button>
+              <a class="link-arrow" href="#contact" data-quote="Solar RTU">
+                <span class="ko">견적 문의</span><span class="en">Request quote</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- EV CHARGER -->
+        <article class="product-card reveal" data-product="ev">
+          <div class="product-media">
+            <img src="assets/images/products/product-ev-charger-md.jpg" alt="KOGOS EV Charger — 전기차 충전기 제어·계량 보드" width="800" height="800" loading="lazy" />
+          </div>
+          <div class="product-body">
+            <p class="product-tag">STM32F407</p>
+            <h3>EV Charger</h3>
+            <p class="product-desc">
+              <span class="ko">전기차 충전기 제어·계량 보드. 4개의 RS-485, 12V 도어락 릴레이, 2.4″ 터치 LCD를 갖춘 AC 220V 구성입니다.</span>
+              <span class="en">EV charger control and metering board: four RS-485 ports, 12 V door-lock relay and a 2.4″ touch LCD on AC 220 V.</span>
+            </p>
+            <ul class="spec-chips">
+              <li>4 × RS-485</li>
+              <li>12 V Relay</li>
+              <li>2.4″ CTP</li>
+              <li>AC 220 V</li>
+            </ul>
+            <div class="product-actions">
+              <button type="button" class="btn btn-outline btn-sm" data-open-spec="ev">
+                <span class="ko">전체 사양 보기</span><span class="en">Full specification</span>
+              </button>
+              <a class="link-arrow" href="#contact" data-quote="EV Charger">
+                <span class="ko">견적 문의</span><span class="en">Request quote</span>
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <p class="product-foot-note">
+        <span class="ko">※ 표기 사양은 2026 ODM Product List 기준이며, 프로젝트 요구에 따라 커스터마이징이 가능합니다.</span>
+        <span class="en">Specifications follow the 2026 ODM Product List and can be customised per project.</span>
+      </p>
+    </div>
+  </section>
+
+  <!-- ===================== APPLICATIONS ===================== -->
+  <section class="section section-alt" id="applications">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="section-label"><span class="ko">적용 분야</span><span class="en">Applications</span></p>
+        <h2><span class="ko">현장에 바로 들어가는 <em>산업용 하드웨어</em></span><span class="en">Industrial hardware that goes straight on site</span></h2>
+      </div>
+      <div class="apps-grid">
+        <div class="app-tile reveal">
+          <h3><span class="ko">산업 자동화 · HMI</span><span class="en">Factory automation &amp; HMI</span></h3>
+          <p><span class="ko">설비 제어반, 패널 PC, PLC 연동 게이트웨이</span><span class="en">Control cabinets, panel PCs, PLC gateways</span></p>
+        </div>
+        <div class="app-tile reveal">
+          <h3><span class="ko">에너지 · EV 충전</span><span class="en">Energy &amp; EV charging</span></h3>
+          <p><span class="ko">태양광 RTU, 충전기 제어·계량 보드</span><span class="en">Solar RTUs, charger control and metering</span></p>
+        </div>
+        <div class="app-tile reveal">
+          <h3><span class="ko">스마트 디바이스</span><span class="en">Smart devices</span></h3>
+          <p><span class="ko">터치 단말, 키오스크, 무선 연동 제품</span><span class="en">Touch terminals, kiosks, connected products</span></p>
+        </div>
+        <div class="app-tile reveal">
+          <h3><span class="ko">의료 · 계측</span><span class="en">Medical &amp; instrumentation</span></h3>
+          <p><span class="ko">진단·계측 장비의 메인보드와 데이터 수집</span><span class="en">Main boards and data acquisition for diagnostics</span></p>
+        </div>
+        <div class="app-tile reveal">
+          <h3><span class="ko">통신 · 게이트웨이</span><span class="en">Connectivity &amp; gateways</span></h3>
+          <p><span class="ko">RS-485 · CAN · 4G/LTE 기반 현장 수집</span><span class="en">Field acquisition over RS-485, CAN and 4G/LTE</span></p>
+        </div>
+        <div class="app-tile reveal">
+          <h3><span class="ko">주문형 제품 개발</span><span class="en">Custom product development</span></h3>
+          <p><span class="ko">기존 보드 기반 파생 모델, 소량 맞춤 생산</span><span class="en">Derivatives of existing boards, small custom builds</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section class="section section-contact" id="contact">
+    <div class="container contact-inner">
+      <div class="contact-copy reveal">
+        <p class="section-label"><span class="ko">문의</span><span class="en">Contact</span></p>
+        <h2>
+          <span class="ko">프로젝트를 말씀해 주세요.<br /><em>가능한 구성</em>부터 정리해 드립니다.</span>
+          <span class="en">Tell us about the project.<br />We will start from <em>what is feasible</em>.</span>
+        </h2>
+        <p class="contact-lead">
+          <span class="ko">용도, 수량, 희망 일정, 필요한 인증을 알려주시면 검토 후 회신드립니다. 표준 제품 구매 문의도 환영합니다.</span>
+          <span class="en">Share the use case, volume, target schedule and required certification. Standard-product enquiries are welcome too.</span>
+        </p>
+        <ul class="contact-list">
+          <li>
+            <span class="contact-label">E-mail</span>
+            <a href="mailto:jylee@kogos.co.kr">jylee@kogos.co.kr</a>
+          </li>
+          <li>
+            <span class="contact-label">Mobile</span>
+            <a href="tel:+821090347253">+82-10-9034-7253</a>
+          </li>
+          <li>
+            <span class="contact-label">R&amp;D Center</span>
+            <address>
+              <span class="ko">(10544) 경기도 고양시 덕양구 으뜸로 130<br />위프라임트윈타워 A동 1112호</span>
+              <span class="en">Room 1112, Bldg A, WePrime Twin Tower<br />130 Eutteum-ro, Deogyang-gu, Goyang-si, Gyeonggi-do 10544, Korea</span>
+            </address>
+          </li>
+          <li>
+            <span class="contact-label"><span class="ko">담당</span><span class="en">Contact person</span></span>
+            <span class="contact-value"><span class="ko">이주용 (Ju Yong Lee)</span><span class="en">Ju Yong Lee</span></span>
+          </li>
+        </ul>
+      </div>
+
+      <form class="contact-form reveal" id="inquiry-form" novalidate>
+        <h3><span class="ko">문의 남기기</span><span class="en">Send an enquiry</span></h3>
+        <div class="form-row">
+          <label for="f-name"><span class="ko">이름</span><span class="en">Name</span><span class="req">*</span></label>
+          <input id="f-name" name="name" type="text" required autocomplete="name" data-ph-ko="홍길동" data-ph-en="Your name" />
+        </div>
+        <div class="form-row">
+          <label for="f-company"><span class="ko">회사 / 소속</span><span class="en">Company</span></label>
+          <input id="f-company" name="company" type="text" autocomplete="organization" data-ph-ko="회사명" data-ph-en="Company name" />
+        </div>
+        <div class="form-row form-row-split">
+          <div>
+            <label for="f-email"><span class="ko">이메일</span><span class="en">E-mail</span><span class="req">*</span></label>
+            <input id="f-email" name="email" type="email" required autocomplete="email" data-ph-ko="name@company.com" data-ph-en="name@company.com" />
+          </div>
+          <div>
+            <label for="f-phone"><span class="ko">연락처</span><span class="en">Phone</span></label>
+            <input id="f-phone" name="phone" type="tel" autocomplete="tel" data-ph-ko="010-0000-0000" data-ph-en="+82 10 0000 0000" />
+          </div>
+        </div>
+        <div class="form-row">
+          <label for="f-product"><span class="ko">관심 제품</span><span class="en">Product of interest</span></label>
+          <select id="f-product" name="product">
+            <option value="" data-ko="선택 없음 / 상담" data-en="Not sure / consulting">선택 없음 / 상담</option>
+            <option value="IMX6Q Board">IMX6Q Board</option>
+            <option value="CM4 Board">CM4 Board</option>
+            <option value="CM3 Board">CM3 Board</option>
+            <option value="Solar RTU">Solar RTU</option>
+            <option value="EV Charger">EV Charger</option>
+            <option value="Custom ODM" data-ko="주문형 ODM 개발" data-en="Custom ODM development">주문형 ODM 개발</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <label for="f-message"><span class="ko">문의 내용</span><span class="en">Message</span><span class="req">*</span></label>
+          <textarea id="f-message" name="message" rows="5" required data-ph-ko="용도, 수량, 희망 납기, 필요한 인증 등을 적어주세요." data-ph-en="Use case, volume, target lead time, required certification."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">
+          <span class="ko">이메일로 문의 보내기</span><span class="en">Send by e-mail</span>
+        </button>
+        <p class="form-note">
+          <span class="ko">전송을 누르면 기본 메일 앱이 열리고 <strong>jylee@kogos.co.kr</strong> 로 보낼 내용이 채워집니다. 웹 서버에 저장되는 정보는 없습니다.</span>
+          <span class="en">Submitting opens your mail app with the message addressed to <strong>jylee@kogos.co.kr</strong>. Nothing is stored on a server.</span>
+        </p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <svg class="brand-mark" viewBox="0 0 40 44" aria-hidden="true" focusable="false">
+        <path d="M20 1.6 37 11 20 20.4 3 11Z" fill="#8fb3da"/>
+        <path d="M3 13.2 18.9 22.3v19.4L3 32.6Z" fill="#2f5d8f"/>
+        <path d="M37 13.2 21.1 22.3v19.4L37 32.6Z" fill="#4f80bc"/>
+      </svg>
+      <div>
+        <strong>KOGOS</strong>
+        <p><span class="ko">임베디드 H/W 설계 ODM · 산업용 LCD/CTP</span><span class="en">Embedded H/W design ODM · Industrial LCD &amp; CTP</span></p>
+      </div>
+    </div>
+    <div class="footer-cols">
+      <div>
+        <h4><span class="ko">바로가기</span><span class="en">Links</span></h4>
+        <ul>
+          <li><a href="#about"><span class="ko">회사 소개</span><span class="en">Company</span></a></li>
+          <li><a href="#capabilities"><span class="ko">ODM 역량</span><span class="en">Capabilities</span></a></li>
+          <li><a href="#products"><span class="ko">제품 라인업</span><span class="en">Products</span></a></li>
+          <li><a href="#contact"><span class="ko">문의</span><span class="en">Contact</span></a></li>
+        </ul>
+      </div>
+      <div>
+        <h4><span class="ko">연락처</span><span class="en">Contact</span></h4>
+        <ul>
+          <li><a href="mailto:jylee@kogos.co.kr">jylee@kogos.co.kr</a></li>
+          <li><a href="tel:+821090347253">+82-10-9034-7253</a></li>
+          <li><span class="ko">경기도 고양시 덕양구 으뜸로 130<br />위프라임트윈타워 A동 1112호</span><span class="en">130 Eutteum-ro, Deogyang-gu, Goyang-si<br />Gyeonggi-do 10544, Korea</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>© <span id="year">2026</span> KOGOS. <span class="ko">모든 권리 보유.</span><span class="en">All rights reserved.</span></p>
+    <p class="footer-meta">Embedded H/W Design ODM · Industrial LCD &amp; CTP · Goyang, Korea</p>
+  </div>
+</footer>
+
+<!-- ===================== SPEC MODAL ===================== -->
+<div class="modal" id="spec-modal" hidden>
+  <div class="modal-backdrop" data-close-modal></div>
+  <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="spec-title">
+    <button type="button" class="modal-close" data-close-modal aria-label="닫기">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+    <div class="modal-body">
+      <div class="modal-media"><img id="spec-img" alt="" /></div>
+      <div class="modal-content">
+        <p class="product-tag" id="spec-tag">NXP i.MX6 Quad</p>
+        <h2 id="spec-title">IMX6Q Board</h2>
+        <p class="modal-desc" id="spec-desc"></p>
+
+        <div class="spec-panel" data-spec-panel="imx6q">
+          <table class="spec-table">
+            <caption class="sr-only">IMX6Q Board specification</caption>
+            <tbody>
+              <tr><th scope="row">CPU</th><td>Quad Core ARM Cortex-A9 1.0 GHz · 2 GB RAM · 32 GB eMMC</td></tr>
+              <tr><th scope="row">Ethernet</th><td>2 × 10/100 Mbps + 1 × 10/100/1000 Mbps</td></tr>
+              <tr><th scope="row">TFT LCD</th><td>7.0″ / 10.1″ 1024×600 · 15.4″ 1280×800 (LVDS)</td></tr>
+              <tr><th scope="row">CTP</th><td><span class="ko">I2C / USB 정전식 터치</span><span class="en">Capacitive touch over I2C or USB</span></td></tr>
+              <tr><th scope="row">RS-485</th><td><span class="ko">UART 선택형 (RS-232 또는 RS-485)</span><span class="en">Selectable UART pairs: RS-232 or RS-485</span></td></tr>
+              <tr><th scope="row">RS-232 / CAN</th><td>8 × RS-232 · 2 × CAN</td></tr>
+              <tr><th scope="row">I2C / SPI / GPIO</th><td>1 × I2C · 2 × SPI · 16 × GPIO</td></tr>
+              <tr><th scope="row">Storage</th><td><span class="ko">Mini SD (부팅·저장) · Mini PCIe (4G 모뎀) · mSATA SSD</span><span class="en">Mini SD (boot and storage) · Mini PCIe (4G modem) · mSATA SSD</span></td></tr>
+              <tr><th scope="row">RTC</th><td>PCF8563T + CR2032 <span class="ko">배터리</span><span class="en">battery</span></td></tr>
+              <tr><th scope="row">Wireless</th><td>Wi-Fi 802.11 b/g/n + Bluetooth 4.0</td></tr>
+              <tr><th scope="row"><span class="ko">전원</span><span class="en">Power</span></th><td>12 V / 1 A</td></tr>
+              <tr><th scope="row"><span class="ko">부팅</span><span class="en">Booting</span></th><td>USB · SD <span class="ko">카드</span><span class="en">card</span> · eMMC</td></tr>
+              <tr><th scope="row"><span class="ko">동작 온도</span><span class="en">Temperature</span></th><td><span class="ko">동작 -20 ~ 70 ℃ · 보관 -30 ~ 85 ℃</span><span class="en">Operating -20 to 70 ℃ · storage -30 to 85 ℃</span></td></tr>
+              <tr><th scope="row">OS</th><td>Linux 4.1.15</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="spec-panel" data-spec-panel="cm4" hidden>
+          <table class="spec-table">
+            <caption class="sr-only">CM4 Board specification</caption>
+            <tbody>
+              <tr><th scope="row">CPU</th><td>Raspberry Pi Compute Module 4</td></tr>
+              <tr><th scope="row">Ethernet</th><td>1 × 100 Mbps + 1 × 1000 Mbps</td></tr>
+              <tr><th scope="row">TFT LCD</th><td>7.0″ / 10.1″ 1280×600 (MIPI)</td></tr>
+              <tr><th scope="row">CTP</th><td><span class="ko">정전식 터치 (CTP)</span><span class="en">Capacitive touch (CTP)</span></td></tr>
+              <tr><th scope="row">RS-485 / RS-232</th><td><span class="ko">4 포트 (모드 선택)</span><span class="en">4 ports (mode selectable)</span></td></tr>
+              <tr><th scope="row">I2C / SPI / GPIO</th><td>1 × I2C · 2 × SPI · 16 × GPIO</td></tr>
+              <tr><th scope="row">USB</th><td>2 × USB 2.0 Type-A</td></tr>
+              <tr><th scope="row">ADC / DAC</th><td>8 ch ADC · 4 ch DAC</td></tr>
+              <tr><th scope="row">Debug</th><td>USB-C <span class="ko">(디버그 · 다운로드)</span><span class="en">(debug and download)</span></td></tr>
+              <tr><th scope="row">Storage</th><td>M.2 NVMe SSD · LTE <span class="ko">모듈</span><span class="en">module</span></td></tr>
+              <tr><th scope="row">Wireless</th><td>Wi-Fi 802.11 b/g/n + Bluetooth 4.0</td></tr>
+              <tr><th scope="row"><span class="ko">전원</span><span class="en">Power</span></th><td>24 V</td></tr>
+            </tbody>
+          </table>
+          <p class="spec-note">
+            <span class="ko"><strong>KM4 완성형 모델</strong> · 동일 플랫폼을 7.0″ IPS 1280×720(450 nit) 전면 IP65 러기드 HMI로 구성할 수 있습니다. 패널·VESA·DIN 마운트, CM4/CM5 대응, 12~36V 입력.</span>
+            <span class="en"><strong>KM4 finished unit</strong> · the same platform can be supplied as a 7.0″ IPS 1280×720 (450 nit) rugged HMI with IP65 front panel, panel/VESA/DIN mounting, CM4/CM5 support and 12–36 V input.</span>
+          </p>
+        </div>
+
+        <div class="spec-panel" data-spec-panel="cm3" hidden>
+          <table class="spec-table">
+            <caption class="sr-only">CM3 Board specification</caption>
+            <tbody>
+              <tr><th scope="row">CPU</th><td>Raspberry Pi Compute Module 3</td></tr>
+              <tr><th scope="row">Ethernet</th><td>1 × 100 Mbps</td></tr>
+              <tr><th scope="row">TFT LCD</th><td>7.0″ / 10.1″ 1024×600 (LVDS)</td></tr>
+              <tr><th scope="row">CTP</th><td><span class="ko">정전식 터치 (CTP)</span><span class="en">Capacitive touch (CTP)</span></td></tr>
+              <tr><th scope="row">RS-485 / RS-232</th><td>1 × RS-485 · 2 × RS-232</td></tr>
+              <tr><th scope="row">I2C / SPI / GPIO</th><td>1 × I2C · 2 × SPI · 16 × GPIO</td></tr>
+              <tr><th scope="row">USB</th><td>3 × USB 2.0 Type-A</td></tr>
+              <tr><th scope="row">Wireless</th><td>Wi-Fi 802.11 b/g/n + Bluetooth 4.0</td></tr>
+              <tr><th scope="row"><span class="ko">전원</span><span class="en">Power</span></th><td>24 V</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="spec-panel" data-spec-panel="solar" hidden>
+          <table class="spec-table">
+            <caption class="sr-only">Solar RTU specification</caption>
+            <tbody>
+              <tr><th scope="row">MCU</th><td>STM32F407</td></tr>
+              <tr><th scope="row">Ethernet</th><td>1 × 100 Mbps <span class="ko">(옵션)</span><span class="en">(option)</span></td></tr>
+              <tr><th scope="row">LCD</th><td>2.4″ 240×320 TFT</td></tr>
+              <tr><th scope="row"><span class="ko">조작부</span><span class="en">Keypad</span></th><td>4-key</td></tr>
+              <tr><th scope="row">RS-485</th><td>4 × RS-485</td></tr>
+              <tr><th scope="row">RS-232</th><td>2 × RS-232</td></tr>
+              <tr><th scope="row">UPS</th><td><span class="ko">5분 백업</span><span class="en">5-minute backup</span></td></tr>
+              <tr><th scope="row"><span class="ko">전원</span><span class="en">Power</span></th><td>AC 220 V</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="spec-panel" data-spec-panel="ev" hidden>
+          <table class="spec-table">
+            <caption class="sr-only">EV Charger specification</caption>
+            <tbody>
+              <tr><th scope="row">MCU</th><td>STM32F407</td></tr>
+              <tr><th scope="row">Ethernet</th><td>1 × 100 Mbps <span class="ko">(옵션)</span><span class="en">(option)</span></td></tr>
+              <tr><th scope="row">LCD</th><td>2.4″ 240×320 TFT</td></tr>
+              <tr><th scope="row">CTP</th><td><span class="ko">정전식 터치 (CTP)</span><span class="en">Capacitive touch (CTP)</span></td></tr>
+              <tr><th scope="row">RS-485</th><td>4 × RS-485</td></tr>
+              <tr><th scope="row">RS-232</th><td>1 × RS-232</td></tr>
+              <tr><th scope="row"><span class="ko">도어락</span><span class="en">Door lock</span></th><td>12 V <span class="ko">릴레이 출력</span><span class="en">relay output</span></td></tr>
+              <tr><th scope="row"><span class="ko">전원</span><span class="en">Power</span></th><td>AC 220 V</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="modal-actions">
+          <a class="btn btn-primary btn-sm" href="#contact" data-close-modal>
+            <span class="ko">이 사양으로 문의하기</span><span class="en">Enquire about this board</span>
+          </a>
+          <a class="btn btn-ghost btn-sm" href="assets/docs/KOGOS-ODM-Product-List-2026.pdf" download>
+            <span class="ko">카탈로그 PDF</span><span class="en">Catalogue PDF</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
