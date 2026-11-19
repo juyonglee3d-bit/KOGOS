@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://kogos.co.kr/</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://kogos.co.kr/assets/images/og-kogos.jpg</image:loc>
+      <image:title>KOGOS 코고스 — 임베디드 하드웨어 설계 ODM</image:title>
+    </image:image>
+  </url>
+</urlset>
